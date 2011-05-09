@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="5dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:gravity="center" android:layout_gravity="center">
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/spnScript"></Spinner>
+        <Button android:id="@+id/btnExec" android:layout_height="wrap_content" android:text="Exec" android:layout_width="wrap_content" android:gravity="center"></Button>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/LinearLayout2" android:gravity="center">
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/edtStdIn" android:layout_weight="1" android:hint="Enter arguments here.."></EditText>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:background="#aacc33" android:layout_height="2dp"></View>
+    <ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/lsvStdOut" android:dividerHeight="0dp" android:background="#000000" android:divider="#00000000"></ListView>
+    <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:background="#aacc33" android:layout_height="2dp"></View>
+</LinearLayout>

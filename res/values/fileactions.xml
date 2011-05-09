@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="menuActions">File actions</string>
+    <string-array name="actionsChoice">
+    <item>File actions</item>
+    <item>--------</item>
+	<item>Copy</item>
+ 	<item>Move</item>
+ 	<item>Rename</item>
+	<item>--------</item>
+ 	<item>Encrypt</item>
+	<item>Decrypt</item>
+	<item>Shred</item>
+	<item>Binary Hide</item>
+	<item>Binary Un-Hide</item>
+	<item>--------</item>
+	<item>Back</item>
+    </string-array>
+</resources>

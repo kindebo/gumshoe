@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="150dp" android:minWidth="280dp">
+    <ScrollView android:layout_height="match_parent" android:id="@+id/scrollView" android:layout_width="fill_parent" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="match_parent" android:layout_gravity="center|top" android:orientation="vertical">
+            <TextView android:layout_height="wrap_content" android:id="@+id/tvMessage" android:text="TextView" android:layout_width="wrap_content" android:layout_weight="1" android:textSize="15dp" android:paddingBottom="25dp" android:paddingLeft="10dp" android:paddingRight="10dp"></TextView>
+            <EditText android:layout_height="wrap_content" android:id="@+id/edtKey" android:layout_width="fill_parent" android:layout_weight="1" android:hint="Decryption key here"></EditText>
+            <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_weight="1">
+                <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/btnDecrypt" android:layout_weight="1" android:text="Decrypt"></Button>
+                <Button android:id="@+id/btnReply" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Reply"></Button>
+                <Button android:id="@+id/btnCancel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Cancel"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+ 
+</LinearLayout>

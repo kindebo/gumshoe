@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.gumshoe"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <application android:icon="@drawable/gicon" android:theme="@style/theme" android:label="Gumshoe">
+        <activity android:name="com.android.gumshoe.Application" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.gumshoeUI.FileBrowser" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.ProfileSearch" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.ProfileDistMessages" android:label="@string/app_name" android:windowSoftInputMode="stateHidden|adjustResize" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.ProfileLog" android:label="@string/app_name" android:windowSoftInputMode="stateHidden|adjustResize" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.SmsSend" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.SmsRead" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.DatabaseNuker" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.TraceStalker" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.SQLSmash" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.ExtensionEraser" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.PanicButton" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.Backup" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.SQLFind" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.SQLHide" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.BASHExec" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.android.gumshoeUI.MakeScript" android:label="@string/app_name" android:screenOrientation="portrait" />
+    </application>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:background="#000000">
+    <LinearLayout android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="wrap_content" android:layout_weight="1">
+            <View   android:id="@+id/firstDivider"
+	        android:layout_width="fill_parent" android:background="#AACC33" android:layout_height="2dp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:gravity="center" android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_weight="25">
+            <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_below="@+id/textView2" android:layout_width="fill_parent">
+                <Button android:text="Date" android:id="@+id/btnDate" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+                <Button android:text="Time" android:id="@+id/btnTime" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+            </LinearLayout>
+            <TextView android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content" android:paddingBottom="5dp" android:text="Timestomp:" android:layout_below="@+id/textView1" android:paddingTop="10dp"></TextView>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignLeft="@+id/aceContact" android:id="@+id/tvBodyTitle" android:layout_below="@+id/linearLayout3" android:text="Message Body:" android:paddingTop="20dp" android:paddingBottom="5dp"></TextView>
+            <EditText android:id="@+id/edtBody" android:layout_alignLeft="@+id/aceContact" android:gravity="top" android:layout_width="fill_parent" android:layout_below="@+id/tvBodyTitle" android:paddingTop="10dp" android:layout_height="fill_parent" android:minHeight="215dp"></EditText>
+            <TextView android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_height="wrap_content" android:id="@+id/tvContactTitle" android:paddingTop="5dp" android:text="Contact: " android:textSize="21dp"></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_below="@+id/tvContactTitle" android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvContactTitle" android:text="Date:" android:textSize="21dp" android:paddingBottom="30dp"></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/tvDate" android:layout_height="wrap_content" android:layout_toRightOf="@+id/textView1" android:layout_alignBottom="@+id/textView1" android:paddingLeft="5dp" android:textSize="21dp" android:paddingBottom="5dp"></TextView>
+            <TextView android:layout_toRightOf="@+id/tvContactTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tvContactTitle" android:layout_alignBottom="@+id/tvContactTitle" android:id="@+id/tvContact" android:paddingLeft="5dp" android:paddingTop="5dp" android:textSize="21dp"></TextView>
+        </RelativeLayout>
+        <View android:id="@+id/firstDivider" android:layout_width="fill_parent" android:layout_height="2dp" android:background="#AACC33"></View>
+        <LinearLayout android:id="@+id/linearLayout4" android:paddingTop="5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_weight="1">
+            <Button android:id="@+id/btnPrevious" android:text="&lt; &lt;" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+            <Button android:id="@+id/btnModify" android:paddingRight="20dp" android:text="Modify" android:layout_weight="1" android:paddingLeft="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+            <Button android:id="@+id/btnNext" android:text="&gt; &gt;" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    
+
+   
+
+

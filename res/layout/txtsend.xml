@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="10dp">
+    <EditText android:layout_height="wrap_content" android:id="@+id/edtContact" android:padding="5dp" android:layout_width="fill_parent" android:clickable="true"></EditText>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:padding="5dp" android:gravity="center">
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/edtKey" android:layout_weight="1" android:clickable="true" android:hint="Enter passphrase.."></EditText>
+    </LinearLayout>
+    <EditText android:id="@+id/edtBody" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="top" android:padding="10dp" android:layout_width="fill_parent" android:clickable="true" android:hint="Your message here.."></EditText>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:paddingTop="10dp">
+        <Button android:id="@+id/btnSend" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Send"></Button>
+        <Button android:id="@+id/btnEncrypt" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Encrypt" android:layout_weight="1"></Button>
+        <Button android:id="@+id/btnCancel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Cancel"></Button>
+    </LinearLayout>
+</LinearLayout>

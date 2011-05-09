@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center">
+        <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_gravity="center" android:gravity="center">
+                <TextView android:layout_height="wrap_content" android:id="@+id/textView" android:layout_width="wrap_content" android:text="GUMSHOE" android:paddingTop="5dp" android:textSize="45dp" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.5" android:shadowColor="#000000"></TextView>
+                <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/textView" android:paddingTop="50dp" android:shadowRadius="2.5" android:shadowDy="0.0" android:shadowDx="0.0" android:shadowColor="#000000" android:textSize="13dp" android:text="Version 1.0 RC1"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+        <ListView android:layout_weight="1" android:id="@+id/list" android:layout_gravity="center" android:cacheColorHint="#00000000" android:layout_height="fill_parent" android:scrollbarAlwaysDrawVerticalTrack="true" android:layout_width="match_parent" android:dividerHeight="0dp" android:divider="#00000000" android:padding="5dp"></ListView>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="vertical" android:gravity="bottom|center" android:padding="3dp">
+            <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:background="#ffffe1" android:fadingEdge="horizontal" android:fadingEdgeLength="2dp" android:layout_height="1dp"></View>
+            <View android:fadingEdge="horizontal" android:layout_height="1dp" android:fadingEdgeLength="2dp" android:layout_width="fill_parent" android:id="@+id/View01" android:background="#aacc33"></View>
+            <TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:gravity="center" android:layout_height="wrap_content" android:paddingTop="5dp" android:ellipsize="middle" android:textSize="21dp" android:text="anti-forensic framework"></TextView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+

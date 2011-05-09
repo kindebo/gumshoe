@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="custom_theme_color">#333333</color>
+    <style name="theme">
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#fffef1</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+    </style>
+</resources>

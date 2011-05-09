@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:gravity="center" android:minWidth="300dp">
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/chbSDcard" android:text="Include SDcard"></CheckBox>
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max the seek bar to confirm!" android:paddingTop="5dp"></TextView>
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/seekBar1" android:layout_width="match_parent" android:max="100"></SeekBar>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="0">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/btnOk" android:text="Ok"></Button>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/btnCancel" android:text="Cancel"></Button>
+    </LinearLayout>
+ </LinearLayout>

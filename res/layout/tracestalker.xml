@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="5dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/LinearLayout01" android:gravity="center">
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/edtPath" android:focusable="false" android:inputType="text" android:hint="Selected path.."></EditText>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/btnSendTo" android:text="Query Database"></Button>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:background="#aacc33" android:layout_height="2dp"></View>
+    <ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/lsvStdOut" android:background="#000000"></ListView>
+    <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:background="#aacc33" android:layout_height="2dp"></View>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:paddingTop="3dp" android:gravity="center">
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/edtQuery" android:layout_weight="1" android:hint="Search here"></EditText>
+        <Button android:id="@+id/btnSearch" android:layout_height="wrap_content" android:text="Search" android:layout_width="wrap_content"></Button>
+    </LinearLayout>
+</LinearLayout>

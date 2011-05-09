@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_gravity="left" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="wrap_content">
+            <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center" android:paddingTop="5dp" android:typeface="normal" android:textSize="25dip" android:id="@+id/tvTitle" android:text="Profile distortion"></TextView>
+            <View   android:id="@+id/firstDivider"
+	        android:layout_width="fill_parent" android:layout_height="2dp" android:background="#aacc33"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_weight="1" android:layout_width="match_parent" android:gravity="center" android:layout_height="fill_parent" android:id="@+id/relativeLayout1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView" android:text="Log Type:"></TextView>
+            <RadioGroup android:layout_width="wrap_content" android:layout_below="@+id/textView" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView" android:id="@+id/radioGroup" android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:id="@+id/rdbCall" android:text="Call Log"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rdbSMS" android:text="SMS Message"></RadioButton>
+            </RadioGroup>
+            <EditText android:layout_height="wrap_content" android:id="@+id/edtContact" android:layout_width="wrap_content" android:layout_below="@+id/radioGroup" android:layout_alignRight="@+id/radioGroup" android:layout_alignLeft="@+id/radioGroup" android:hint="Select contact"></EditText>
+            <Button android:layout_width="wrap_content" android:paddingLeft="20dp" android:layout_height="wrap_content" android:text="Search" android:id="@+id/btnSearch" android:paddingRight="20dp" android:layout_below="@+id/edtContact" android:layout_alignLeft="@+id/edtContact" android:layout_alignRight="@+id/edtContact"></Button>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="vertical" android:gravity="center" android:layout_gravity="center" android:layout_height="wrap_content">
+	        <View   android:id="@+id/firstDivider"
+	        android:layout_height="2dp"
+	        android:layout_width="fill_parent" android:background="#aacc33"/>
+        </LinearLayout>
+    </LinearLayout>

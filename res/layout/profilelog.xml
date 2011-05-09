@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:orientation="vertical" android:layout_width="fill_parent" android:layout_gravity="left" android:layout_height="fill_parent" android:background="#000000">
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="wrap_content">
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="2dp" android:background="#AACC33" android:id="@+id/firstDivider"></View>
+        <RelativeLayout android:layout_weight="1" android:gravity="center" android:layout_gravity="center" android:id="@+id/relativeLayout1" android:layout_height="fill_parent" android:layout_width="fill_parent">
+            <TextView android:layout_alignParentTop="true" android:layout_width="wrap_content" android:id="@+id/tvTitle" android:layout_height="wrap_content" android:paddingBottom="10dp" android:textStyle="bold" android:textSize="21dp" android:text="Contact: "></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/tvTitle2" android:text="Date: " android:layout_height="wrap_content" android:textStyle="bold" android:textSize="21dp" android:layout_below="@+id/tvTitle4" android:layout_alignLeft="@+id/tvTitle4" android:paddingBottom="50dp"></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/tvTitle3" android:text="Type: " android:layout_height="wrap_content" android:paddingBottom="10dp" android:textStyle="bold" android:textSize="20dp" android:layout_alignLeft="@+id/tvTitle" android:layout_below="@+id/tvTitle"></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/tvTitle4" android:text="Length: " android:layout_below="@+id/tvTitle3" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="21dp" android:paddingBottom="10dp"></TextView>
+            <TextView android:layout_width="wrap_content" android:id="@+id/tvTitle5" android:text="Distort" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="21dp" android:layout_below="@+id/tvTitle2"></TextView>
+            <LinearLayout android:id="@+id/linearLayout5" android:gravity="center" android:layout_width="wrap_content" android:layout_below="@+id/linearLayout3" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/edtMinute" android:paddingLeft="20dp" android:paddingRight="20dp" android:maxLength="3" android:inputType="number" android:hint="00"></EditText>
+                <TextView android:textSize="60dp" android:id="@+id/tvSemi" android:text=":" android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingBottom="12dp"></TextView>
+                <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/edtSecond" android:paddingRight="20dp" android:paddingLeft="20dp" android:maxLength="2" android:inputType="number" android:hint="00"></EditText>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_below="@+id/radioGroup" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnTime" android:layout_weight="1" android:text="Time" android:layout_height="wrap_content" android:layout_width="fill_parent"></Button>
+                <Button android:id="@+id/btnDate" android:layout_weight="1" android:text="Date" android:layout_height="wrap_content" android:layout_width="fill_parent"></Button>
+            </LinearLayout>
+            <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_below="@+id/tvTitle5" android:layout_alignLeft="@+id/tvTitle5" android:layout_height="wrap_content" android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content" android:checked="true" android:text="Incoming" android:layout_height="wrap_content" android:id="@+id/rdbInc"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:text="Outgoing" android:layout_height="wrap_content" android:id="@+id/rdbOut"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:text="Missed" android:layout_height="wrap_content" android:id="@+id/rdbMissed"></RadioButton>
+            </RadioGroup>
+            <TextView android:layout_alignTop="@+id/tvTitle4" android:layout_width="wrap_content" android:layout_toRightOf="@+id/tvTitle4" android:id="@+id/tvLength" android:layout_alignBottom="@+id/tvTitle4" android:layout_height="wrap_content" android:textSize="21dp"></TextView>
+            <TextView android:layout_alignTop="@+id/tvTitle3" android:layout_width="wrap_content" android:layout_toRightOf="@+id/tvTitle3" android:id="@+id/tvType" android:layout_alignBottom="@+id/tvTitle3" android:layout_height="wrap_content" android:textSize="21dp"></TextView>
+            <TextView android:layout_alignTop="@+id/tvTitle2" android:layout_width="wrap_content" android:layout_toRightOf="@+id/tvTitle2" android:id="@+id/tvDate" android:layout_alignBottom="@+id/tvTitle2" android:layout_height="wrap_content" android:textSize="21dp"></TextView>
+            <TextView android:layout_alignTop="@+id/tvTitle" android:layout_width="wrap_content" android:layout_toRightOf="@+id/tvTitle" android:id="@+id/tvContact" android:layout_alignBottom="@+id/tvTitle" android:layout_height="wrap_content" android:textSize="21dp"></TextView>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center|bottom" android:orientation="vertical">
+            <View android:id="@+id/firstDivider" android:layout_width="fill_parent" android:background="#AACC33" android:layout_height="2dp"></View>
+            <LinearLayout android:id="@+id/linearLayout4" android:paddingTop="5dp" android:layout_height="wrap_content" android:layout_width="match_parent">
+                <Button android:id="@+id/btnPrevious" android:text="&lt; &lt;" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+                <Button android:id="@+id/btnModify" android:paddingRight="20dp" android:text="Modify" android:layout_weight="1" android:paddingLeft="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+                <Button android:id="@+id/btnNext" android:text="&gt; &gt;" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+   
+
+

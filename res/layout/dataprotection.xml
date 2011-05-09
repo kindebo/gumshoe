@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/mainLayout" android:orientation="vertical">
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:text="Data Privacy" android:gravity="center" android:layout_gravity="center" android:textSize="25dp"></TextView>
+        <View android:layout_width="fill_parent" android:background="#4D0000" android:layout_height="4dp" android:id="@+id/firstDivider"></View>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayout">
+            <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Database shedder"></Button>
+            <Button android:id="@+id/button10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Find &amp; Shred all SQLite databases"></Button>
+            <View android:layout_width="fill_parent" android:background="#4D0000" android:layout_height="4dp" android:id="@+id/firstDivider"></View>
+            <Button android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Overwrite un-allocated flash memory"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>

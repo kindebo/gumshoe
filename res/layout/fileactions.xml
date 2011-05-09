@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="top" android:orientation="vertical">
+    <ListView android:id="@+id/lsvFileActions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="10dp" android:divider="#00000000" android:dividerHeight="0dp"></ListView>
+ 
+</LinearLayout>

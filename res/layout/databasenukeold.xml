@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/mainLayout" android:orientation="vertical">
+        <TextView android:layout_gravity="center" android:layout_height="wrap_content" android:id="@+id/textView1" android:textSize="25dp" android:layout_width="wrap_content" android:gravity="center" android:text="Database nuker"></TextView>
+        <View android:layout_width="fill_parent" android:id="@+id/firstDivider" android:layout_height="2dp" android:background="#aacc33"></View>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout" android:orientation="vertical" android:gravity="center">
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/scrollView" android:layout_weight="1">
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="match_parent" android:orientation="vertical" android:padding="10dp">
+                <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp" android:text="Phone specific databases" android:paddingBottom="10dp"></TextView>
+                <CheckBox android:id="@+id/checkBox2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Contacts - Call logs, Groups, Numbers &amp; Email"></CheckBox>
+                <CheckBox android:id="@+id/checkBox10" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="SMS/MMS - Back log of all SMS and MMS"></CheckBox>
+                <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Social media databases" android:paddingTop="10dp" android:paddingBottom="10dp" android:textSize="20dp"></TextView>
+                <CheckBox android:id="@+id/checkBox8" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Facebook - Litterally stores your entire life, alot of sensitive info"></CheckBox>
+                <CheckBox android:id="@+id/checkBox12" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Gtalk - Chats, contacts and accounts "></CheckBox>
+                <CheckBox android:id="@+id/checkBox11" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Picasa - Ablums, phots and accounts"></CheckBox>
+                <CheckBox android:id="@+id/checkBox13" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Twitter - Searches, contacts, photos, statuses and accounts"></CheckBox>
+                <TextView android:layout_height="wrap_content" android:id="@+id/textView6" android:text="Email databases" android:layout_width="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:textSize="20dp"></TextView>
+                <CheckBox android:id="@+id/checkBox7" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Email provider - Non-Gmail accounts cache, inc Inbox, attachments and deleted items "></CheckBox>
+                <CheckBox android:id="@+id/checkBox5" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Databases - Email accounts referance"></CheckBox>
+                <CheckBox android:id="@+id/checkBox9" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Gmail - Your google mail cache with everything you've pulled from it"></CheckBox>
+                <TextView android:layout_height="wrap_content" android:id="@+id/textView5" android:text="Timeline databases" android:layout_width="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:textSize="20dp"></TextView>
+                <CheckBox android:id="@+id/checkBox4" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Geoposition - Last cached GPS location"></CheckBox>
+            <CheckBox android:id="@+id/checkBox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calendar - Inputted/Synced Events and dates"></CheckBox>
+            <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Web browser databases" android:paddingBottom="10dp" android:paddingTop="10dp" android:textSize="20dp"></TextView>
+            <CheckBox android:id="@+id/checkBox1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Browser - Bookmarks, Searches"></CheckBox>
+            <CheckBox android:id="@+id/checkBox6" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Downloads - Web downloads history"></CheckBox>
+            <CheckBox android:id="@+id/checkBox14" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Webicons - Icons cached from visited URLs"></CheckBox>
+            <CheckBox android:id="@+id/checkBox15" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="WebView - Plaintext passwords, cookies and accounts"></CheckBox>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_width="fill_parent" android:paddingTop="5dp">
+            <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Select All"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/btnShred" android:layout_weight="1" android:text="Shred selected"></Button>
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:gravity="center" android:minWidth="320dp">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left" android:text="Enter a file extension:"></TextView>
+    <EditText android:id="@+id/edtInput" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="0" android:hint="e.g. doc, jpeg, exe"></EditText>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="0">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/btnOk" android:text="Search &amp; Shred"></Button>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/btnCancel" android:text="Cancel"></Button>
+    </LinearLayout>
+ </LinearLayout>
